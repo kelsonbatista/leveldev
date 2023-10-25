@@ -1,5 +1,8 @@
-produto = Produto.new "capacete", 550.0
+require './assert.rb'
+require './produto.rb'
 
-assert produto.nome == "Capacetes"
+produto = Produto.new "Capacete", 550.0
+
+assert produto.nome == "Capacete"
 assert produto.preco == 550.0
 
