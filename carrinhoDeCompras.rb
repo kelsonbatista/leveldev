@@ -7,4 +7,8 @@ class CarrinhoDeCompras
   def total
     @itens.sum { |p| p[:item].preco * p[:quantidade] }
   end
+
+  def quantidade
+    @itens.sum { |item| item[:quantidade] }
+  end
 end
