@@ -5,5 +5,7 @@ def hello(what, &xpto)
     xpto.call("mundo") # invocação de forma explicita com call
 end
 
-hello("world") { |x| puts "dentro do bloco: #{x}" }
-  
+# hello("world") { |x| puts "dentro do bloco: #{x}" }
+
+ola = -> (quem) { puts "olá #{quem}" } # funções anonimas
+ola.call("mundo")
