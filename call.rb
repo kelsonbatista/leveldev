@@ -12,3 +12,16 @@ end
 
 ola = Proc.new { |quem| puts "olá #{quem}" }
 ola.call "mundo"
+
+class CriarUsuario
+    def call
+    end
+end
+
+executar(CriarUsuario.new)
+executar(->() {})
+executar(Proc.new)
+
+def executar(logica)
+    logica.call
+end
